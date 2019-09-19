@@ -1,0 +1,24 @@
+Graded 9/18 by Mark Congdon
+
+Total Score:		25/25
+
+Compiles and Runs:	15/15
+Correct Output:		6/6
+Consistent Style:	2/2
+Efficiency:			2/2
+
+Good work!  Your program is very clean and well-organized.
+
+For future projects, you will want to start adding comments.
+Everybody does comments slightly differently, but at a minimum
+it would have been good to have a comment for the set of
+methods that did the verses, and a comment for the set of
+methods that did the individual lines within the verses.
+
+There is one efficiency that could be added.  Notice that
+every time you call Ate(), you call Lay() immediately afterwards.
+Therefore, you could add Lay() at the end of your Ate() method, and
+remove it from the verse methods.  Then, you could do the same thing
+with Killed (add Ate() at the end of it), etc.  Your Maiden() function,
+then, would have just your first printed line, and the Milked()
+method, and everything else would happen automatically.
